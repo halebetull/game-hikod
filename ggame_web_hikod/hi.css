@@ -1,0 +1,563 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    background-color:#C9D7DD;
+    scroll-behavior: smooth;
+       }
+ 
+       /*scrollbar*/
+   ::-webkit-scrollbar{
+    width: 12px;
+   }
+   ::-webkit-scrollbar-thumb{
+    background: #0B2447;
+    border-radius: 10px;
+   }
+ 
+ header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0B2447;
+    transition: 0.5s;
+    z-index: 1000;
+ }
+ 
+ header.sticky{
+    background-color: #0a3d83;
+    box-shadow: 0 5px 20px  rgb(11, 36, 119);
+ }
+ 
+ 
+ header.sticky{
+    background-color: #04152e;
+ box-shadow: 5px 5px 20px rgba(35, 68, 129, 0.9);
+ 
+ }
+ 
+ header .logo{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+ }
+ 
+ header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ header ul li{
+    list-style: none;
+    margin: 10px;
+ }
+ header ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+ }
+ 
+ header ul li a:hover{ 
+    background-color: aqua;
+    color: black;
+    box-shadow: 0px 0px 15px aqua;
+ }
+ 
+ header .action .search{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+ }
+ 
+ header .action .search i{
+    font-size: 1.4em;
+    margin: 5px;
+    color: black;
+ }
+ 
+ header .action .search input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: black;
+ 
+ }
+ 
+ 
+ /* home */
+ 
+ .banner{
+    
+    width: 80%;
+    min-height: 100vh;
+    padding:0px 40px;
+    justify-content:center;
+   margin-left: 300px;
+   align-items: center;
+   margin-left: 170px;
+    
+ 
+ }
+ 
+ .banner .bg{
+    position: relative;
+    width: 90%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+ }
+ 
+ 
+ .banner .bg .content{
+    width: 50%;
+    height: 100%;
+  }
+ 
+ .banner .bg .content h2{
+    font-size: 80px;
+    color: #0B2447;
+    letter-spacing: 1px;
+    margin-left:auto;
+       margin-right:auto;
+ 
+ }
+ 
+ .banner .bg .content p{
+    font-size: 25px;
+    color: #0B2447;
+    letter-spacing: 1px;
+ }
+ 
+ .banner .bg .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px none #0B2447;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #C9D7DD;
+    letter-spacing: 1px;
+    background-color: #0B2447;
+    box-shadow:rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+ }
+ 
+ .banner .bg .content a:hover{
+    background:rgb(14, 170, 170);
+    border: none;
+    box-shadow: 0 0 10px #0B2447;
+ }
+ 
+ /*about*/
+ 
+ .about{
+    position: relative;
+    width: 80%;
+    min-height: 75vh;
+    padding: 0px 197px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ .about .content{
+    width: 50%;
+    margin: 20px;
+ }
+ 
+ .about .content h2{
+    font-size: 5em;
+    font-weight: 700;
+    color: #0B2447;
+    margin: 0px;
+    
+ }
+ 
+ .about .content p{
+    max-width: 600px;
+    text-align:justify;
+    color: #0B2447;
+    font-size:25px ;
+    letter-spacing: 1px;
+   
+ }
+ 
+ .about .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px none #0B2447;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #C9D7DD;
+    letter-spacing: 1px;
+    background-color: #0B2447;
+    box-shadow:rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+ }
+ 
+ .about .content a:hover{
+    background:rgb(14, 170, 170);
+    border: none;
+    box-shadow: 0 0 10px #0B2447;
+   }
+ 
+  /* Games */
+ 
+  .games{
+   /* padding: 0px 100px; */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+  }
+ 
+  .games h2{
+    color: #0B2447;
+    margin: 10px 0;
+    font-size: xx-large;
+    letter-spacing: 1px;
+  }
+ 
+  .games ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+ 
+  .games ul li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #0B2447;
+    font-size: large;
+  }
+ 
+  .games ul li.active{
+    background: rgb(12, 199, 199);
+    box-shadow: 0 0 5px black;
+  }
+ 
+  .games .cardbx{
+   /*width: 200px; */
+    min-height: 10px;
+    margin: 20px 40p;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
+ 
+ 
+  }
+ 
+  .games .cardbx .card{
+    width: 200px;
+    border-radius: 10px;
+    background-color: #9caaaf;
+    overflow: hidden;
+    margin: 60px;
+  }
+ 
+  .games .cardbx .card img{
+    width: 100%;
+    height: 250px;
+    /*object-fit: cover; */
+  }
+ 
+  .games .cardbx .card .content{
+    padding: 10px;
+ 
+  }
+ 
+  .games .cardbx .card .content h4{
+    color: #0B2447;
+    margin: 15px 0;
+ 
+  }
+ 
+  .games .cardbx .card .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #818586;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+ 
+  .games .cardbx .card .progress-line span{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    background: aqua;
+    box-shadow: 0px 0px 10px aqua;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+ 
+  }
+ 
+  @keyframes animate{
+    100%{
+       transform: scaleX(1);
+    }
+  }
+ 
+  .games .cardbx .card .info{
+    border-top: 2px solid  #bbc6c9;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+ 
+  .games .cardbx .card .info p{
+    font-size: 18px;
+    color: #0B2447;
+  }
+ 
+  .games .cardbx .card .info p span{
+    color: aqua;
+    font-size: 15px;
+  }
+ 
+  .games .cardbx .card .info a{
+    display: inline-block;
+    padding: 10px 2px;
+    margin: 10px 0;
+    border: 1px none aqua;
+    text-decoration: none;
+    font-weight: 560;
+    border-radius: 5px;
+    color: #0B2447;
+    letter-spacing: 1px;
+    background-color: aqua;
+    box-shadow: 0 0 10px aqua;
+ 
+  }
+ 
+  .games .cardbx .card .info a:hover{
+    background:aqua;
+    color: #0B2447;
+    box-shadow: 0 0 10px rgb(3, 196, 196);
+    border: none;
+  }
+ 
+ 
+  .games .cardbx .card.hide{
+    display: none;
+  }
+ 
+  /*contact*/
+ 
+  .contact{
+ padding:50px 0px 50px 210px;
+ width: 100%;
+ min-height: 50vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  }
+ 
+  .contact img{
+    height: 100%;
+    object-fit: cover;
+    border-radius:10px ;
+  }
+ 
+  .contact .form{
+    width: 50%;
+    margin: 30px;
+  }
+ 
+  .contact .form h1{
+    color: #0B2447;
+  }
+  
+  .contact .form .inputbx{
+    margin: 10px 0
+  }
+ 
+  .contact .form .inputbx p{
+    color:#0B2447;
+  }
+ 
+  .contact .form .inputbx input,
+  .contact .form .inputbx textarea{
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 50%;
+    color: #0B2447;
+    background: #9caaaf;
+    min-height: 15px;
+    font-size: 1.1em;
+  }
+ 
+  .contact .form .inputbx textarea{
+    height: 150px;
+  }
+ 
+  .contact .form .inputbx input[type='submit']{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 0;
+    outline: none;
+    background: #0B2447;
+    border: 2px solid #0B2447;
+    text-decoration: none;
+    font-weight: 400;
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1.3px;
+  }
+ 
+  .contact .form .inputbx input[type='submit']:hover{
+   background: #0B2447 ;
+   border: none;
+   color: white;
+   box-shadow: 0 0 10px #082144;
+  }
+ 
+  /*footer*/
+ 
+  footer{
+    padding: 10px 100px;
+  }
+ 
+ footer .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ footer .info .logo{
+    position: relative;
+    color: #0B2447;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+ }
+ 
+ footer .info p{
+    color: #0B2447;
+ }
+ 
+ footer .info ul{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ footer .info ul li{
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    border: 1px solid #0B2447;
+ }
+ 
+ footer .info ul li:hover{
+    background: aqua;
+    border: none;
+    box-shadow: 0 0 10px #0B2447
+ }
+ 
+ footer .info ul li a i{
+    font-size: 1.5em;
+    color: #0B2447;
+ }
+ 
+ footer .info ul li:hover a i{
+    color: #818586;
+ }
+ 
+ /*responsive*/
+ 
+ @media (max-width: 991px)
+ {
+    header
+    {
+       padding: 15px 40px;
+    }
+    header .nav{
+       position: fixed;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       background-color: #0B2447;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       z-index: 1000;
+    }
+ 
+    header .nav li{
+       margin: 20px 0;
+    }
+ 
+    header .nav li a{
+       font-size: 24px;
+       margin: 10px 0;
+    }
+ 
+    .toggleMenu{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url(games/menu.png.png);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1001;
+    }
+ 
+    .toggleMenu.active{
+       background: url(games/close.png.png);
+       background-position: center;
+       background-size: 30px;
+       background-repeat: no-repeat;
+ 
+    }
+ 
+ }
+ 
+ 

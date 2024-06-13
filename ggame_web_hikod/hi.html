@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hi.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Royal Games</a>
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#">Random</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="action">
+            <div class="search">
+                <a href="#"><i class='bx bx-search-alt'></i></a>
+                <input type="text" placeholder="Search Game">
+            </div>
+        </div>
+        <div class="togglemenu" onclick="toggleMenu();"></div>
+    </header>
+
+    <!--homebnr-->
+
+   <div class="banner" id="Home">
+    <div class="bg">
+        <div class="content">
+            <h2>King Games For
+            Royal Players.</h2>
+            <p>if you want to access the royal games in a more convenient, cheap and convenient way, this site is for you!</p>
+            <a href="#" class="btn">Join Us!</a>
+        </div>
+         <img src="games/pngwing.png">
+    
+         
+    </div>
+   </div>
+
+            <!--about-->
+            
+            <div class="about" id="about">
+                <div class="content">
+                    <h2>About Us:</h2>
+                    <p>we are a structure established by high-school young people, our goal is to offer students a cheaper, convenient and comfortable playground and to bring them to a level that will raise entertainment areas. 
+                        The comfort of young people is the most important for the world. 
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+                <img src="games/—Pngtree—play game play game boy_6752383.png">
+            </div>
+            <!--Games-->
+ <div class="games" id="games">
+    <h2>Popular Games</h2>
+    <ul>
+        <li class="list active" data-filter="all">All</li>
+        <li class="list" data-filter="pc">Pc Games</li>
+        <li class="list" data-filter="playstation">Playstation Games</li>
+        </ul>
+
+        <div class="cardbx">
+        <div class="card" data-item="pc">
+            <img src="games/EGS_AlanWake2_RemedyEntertainment_S2_1200x1600-c7c8091ddac0f9669c8e5905bca88aaa.jpg">
+            <div class="content">
+                <h4>Alan Wake II</h4>
+                <div class="progress-line"><span></span></div>
+                <div class="info">
+                        
+             <p>Price <br><span>$10</span></p>
+             <a href="#">Play Now!</a>
+    
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-item="pc">
+ <img src="games/jhEe4NvETyOzzR22JcUrTrIe.jpg">
+ <div class="content">
+    <h4>Yakuza: Like a Dragon</h4>
+    <div class="progress-line"><span></span></div>
+    <div class="info">
+        <p>Price <br> <span>$10</span></p>
+                   <a href="#">Play Now!</a>
+    </div>
+ </div>
+        </div>
+
+        <div class="card" data-item="pc">
+       <img src="games/WDA_StorePortrait_1200x1600_1200x1600-75d21fb44d647ad69967ae1bb0ab0cbc.jpg">
+       <div class="content">
+        <h4>Watch Dogs 2</h4>
+        <div class="progress-line"><span></span></div>
+        <div class="info">
+            <p>Price <br><span>$10</span></p>
+            <a href="#">Play Now!</a>
+        </div>
+       </div>
+        </div>
+
+    <div class="card" data-item="pc">
+        <img src="games/71xnh5WM+GL.jpg">
+        <div class="content">
+            <h4>Red Dead Redemption 2 </h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+            <p>Price <br><span>$10</span></p>
+            <a href="#">Play Now!</a>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="card" data-item="pc">
+        <img src="games/cyberpunk.png.jpg">
+        <div class="content">
+            <h4>Cyberpunk 2077</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+            <p>Price <br><span>$10</span></p>
+            <a href="#">Play Now!</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" data-item="playstation">
+        <img src="games/71OMZcRelKL.jpg">
+        <div class="content">
+            <h4>The Last Of Us Part II</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+            <p>Price <br><span>$10</span></p>
+            <a href="#">Play Now!</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" data-item="pc">
+    <img src="games/DETROIT2-860x1148-a03ac8673f779b286dcccc83dbe75249.jpg">
+    <div class="content">
+        <h4>Detroit: Become Human</h4>
+        <div class="progress-line"><span></span></div>
+        <div class="info">
+        <p>Price <br><span>$10</span></p>
+        <a href="#">Play Now!</a>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-item="playstation">
+    <img src="games/MV5BZDkyZjI1ZWQtZjY5Ny00MGI0LThjZWYtMzQ3NGYyMmE4MDkzXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_.jpg">
+    <div class="content">
+        <h4>Uncharted 3</h4>
+        <div class="progress-line"><span></span></div>
+        <div class="info">
+        <p>Price <br><span>$10</span></p>
+        <a href="#">Play Now!</a>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-item="playstation">
+    <img src="games/hzd_tall-1200x1600-d4b1057afd47f9256d8da71f2f187be4.jpg">
+    <div class="content">
+        <h4>Horizon Zero Dawn</h4>
+        <div class="progress-line"><span></span></div>
+        <div class="info">
+        <p>Price <br><span>$10</span></p>
+        <a href="#">Play Now!</a>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-item="playstation">
+    <img src="games/ojKZ7l0T2M5egR9YHIjVhI0R.jpg">
+    <div class="content">
+        <h4>Witcher 3 Wild Hunt</h4>
+        <div class="progress-line"><span></span></div>
+        <div class="info">
+        <p>Price <br><span>$10</span></p>
+        <a href="#">Play Now!</a>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-item="pc">
+    <img src="games/790a0450ed2aa2f626b6018b52d037f1_86af27933e0e708b47c274eac563fb08.jpg">
+    <div class="content">
+        <h4>Stardew Valley</h4>
+        <div class="progress-line"><span></span></div>
+        <div class="info">
+        <p>Price <br><span>$10</span></p>
+        <a href="#">Play Now!</a>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-item="playstation">
+    <img src="games/MV5BZTIyOGQ4MTgtZGU3NC00MDQwLTllNjgtYmZlMjRkNjBjZWIyXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_.jpg">
+    <div class="content">
+        <h4>Ratchet & Clank</h4>
+        <div class="progress-line"><span></span></div>
+        <div class="info">
+        <p>Price <br><span>$10</span></p>
+        <a href="#">Play Now!</a>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-item="playstation">
+    <img src="games/SZRc7OMwGgv8lJXIOlYyuBU2.jpg">
+    <div class="content">
+        <h4>God Of War Ragnarök</h4>
+        <div class="progress-line"><span></span></div>
+        <div class="info">
+        <p>Price <br><span>$10</span></p>
+        <a href="#">Play Now!</a>
+        </div>
+    </div>
+</div>
+
+        </div>
+ </div>
+    <!--contact-->
+
+ <div class="contact" id="contact">
+    <img src="games/desk-setup-gadgets-featured-image-768x461.jpg">
+    <div class="form">
+        <h1>Contact Us!</h1>
+        <div class="inputbx">
+            <p>Enter Name</p>
+            <input type="text" placeholder="Full Name">
+        </div>
+        <div class="inputbx">
+            <p>Enter Email</p>
+            <input type="text" placeholder="Full Name">
+        </div>
+        <div class="inputbx">
+            <p>Message</p>
+            <textarea placeholder="Type here..."></textarea>
+        </div>
+        <div class="inputbx">
+            <input type="submit" name="Submit">
+        </div>
+    </div>
+ </div>
+
+
+ <footer>
+    <div class="info">
+    <a href="#" class="logo">Royal Games</a>
+    <p><i class='bx bx-copyright'></i>2024 All Rights Reserved</p>
+    <ul>
+        <li><a href="#"><i class='bx bxl-facebook-square'></i></a></li>
+        <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+        <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+        <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+    </ul>
+    </div>
+ </footer>
+
+ <script>
+
+    /*Responsive*/
+
+window.addEventListener('scroll',function(){
+    var header = document.querySelector('header');
+    header.classList.toggle('sticky',window.scrollY > 0);
+});
+
+
+
+function toggleMenu(){
+    const toggleMenu = document.querySelector('.toggleMenu');
+    const nav = document.querySelector('.nav');
+    toggleMenu.classList.toggle('active')
+    nav.classList.toggle('active')
+}
+
+
+    let list = document.querySelectorAll('.list');
+let card = document.querySelectorAll('.card');
+
+for(let i = 0; i<list.length; i++){
+    list[i].addEventListener('click',function(){
+        for(let j=0; j<list.length; j++){
+            list[j].classList.remove('active');
+        }
+        this.classList.add('active');
+
+        let dataFilter = this.getAttribute('data-Filter');
+
+        for( let k=0; k<card.length; k++)
+        {
+            card[k].classList.remove('active');
+            card[k].classList.add('hide');
+
+            if(card[k].getAttribute('data-item') == dataFilter || dataFilter == 'all'){
+
+             card[k].classList.remove('hide');
+             card[k].classList.add('active');
+
+            }
+        }
+    })
+}
+
+
+
+
+ </script>
+  </body>
+
+  </html>
