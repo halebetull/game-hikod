@@ -31,17 +31,14 @@ body{
     z-index: 1000;
  }
  
+ 
  header.sticky{
-    background-color: #0a3d83;
+    background-color: #042b61;
     box-shadow: 0 5px 20px  rgb(11, 36, 119);
  }
  
  
- header.sticky{
-    background-color: #04152e;
- box-shadow: 5px 5px 20px rgba(35, 68, 129, 0.9);
- 
- }
+
  
  header .logo{
     position: relative;
@@ -68,6 +65,8 @@ body{
     border-radius: 5px;
  }
  
+ 
+
  header ul li a:hover{ 
     background-color: aqua;
     color: black;
@@ -507,65 +506,9 @@ body{
  
  /*responsive*/
  
- @media (max-width: 991px)
- {
-    header
-    {
-       padding: 15px 40px;
-    }
-    header .nav{
-       position: fixed;
-       top: 0;
-       left: 0;
-       right: 0;
-       bottom: 0;
-       background-color: #0B2447;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-direction: column;
-       z-index: 1000;
-    }
  
-    header .nav li{
-       margin: 20px 0;
-    }
  
-    header .nav li a{
-       font-size: 24px;
-       margin: 10px 0;
-    }
- 
-    .toggleMenu{
-    position: relative;
-    width: 30px;
-    height: 30px;
-    background: url(games/menu.png.png);
-    background-position: center;
-    background-size: 30px;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    z-index: 1001;
-    }
- 
-    .toggleMenu.active{
-       background: url(games/close.png.png);
-       background-position: center;
-       background-size: 30px;
-       background-repeat: no-repeat;
- 
-    }
- 
- }
-/*
- *,
-::before,
-::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-*/
+
 
 .go-top-btn {
    position: fixed;

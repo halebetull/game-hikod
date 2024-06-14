@@ -16,7 +16,7 @@
     <header>
         <a href="#" class="logo">Royal Games</a>
         <ul class="nav">
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home" >Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#games">Games</a></li>
             <li><a href="#">Random</a></li>
@@ -39,7 +39,7 @@
         <div class="content">
             <h2>King Games For
             Royal Players.</h2>
-            <p>if you want to access the royal games in a more convenient cheap and convenient way,this site is for you!</p>
+            <p>if you want to access the royal games in a more convenient cheap and convenient way, this site is for you!</p>
             <a href="#" class="btn">Join Us!</a>
         </div>
 
@@ -291,12 +291,16 @@
       </ul>
 
     </div>
+
  </footer>
 
+ 
  <script>
+
       src="script.js"
 
 
+/*sticky navbar*/
 
 window.addEventListener('scroll',function(){
     var header = document.querySelector('header');
@@ -304,41 +308,7 @@ window.addEventListener('scroll',function(){
 });
 
 
-
-function toggleMenu(){
-    const toggleMenu = document.querySelector('.toggleMenu');
-    const nav = document.querySelector('.nav');
-    toggleMenu.classList.toggle('active')
-    nav.classList.toggle('active')
-}
-
-
-    let list = document.querySelectorAll('.list');
-let card = document.querySelectorAll('.card');
-
-for(let i = 0; i<list.length; i++){
-    list[i].addEventListener('click',function(){
-        for(let j=0; j<list.length; j++){
-            list[j].classList.remove('active');
-        }
-        this.classList.add('active');
-
-        let dataFilter = this.getAttribute('data-Filter');
-
-        for( let k=0; k<card.length; k++)
-        {
-            card[k].classList.remove('active');
-            card[k].classList.add('hide');
-
-            if(card[k].getAttribute('data-item') == dataFilter || dataFilter == 'all'){
-
-             card[k].classList.remove('hide');
-             card[k].classList.add('active');
-
-            }
-        }
-    })
-}
+/*top button*/
 
 const goTopBtn = document.querySelector('.go-top-btn');
 
