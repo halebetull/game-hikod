@@ -2,12 +2,13 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
+    font-family: "DM Sans", sans-serif;
     background-color:#C9D7DD;
     scroll-behavior: smooth;
        }
  
        /*scrollbar*/
+
    ::-webkit-scrollbar{
     width: 12px;
    }
@@ -128,6 +129,7 @@ body{
  .banner .bg .content{
     width: 50%;
     height: 100%;
+    padding-right:100px;
   }
  
  .banner .bg .content h2{
@@ -135,7 +137,7 @@ body{
     color: #0B2447;
     letter-spacing: 1px;
     margin-left:auto;
-       margin-right:auto;
+    margin-right:auto;
  
  }
  
@@ -222,7 +224,6 @@ body{
   /* Games */
  
   .games{
-   /* padding: 0px 100px; */
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -264,7 +265,6 @@ body{
   }
  
   .games .cardbx{
-   /*width: 200px; */
     min-height: 10px;
     margin: 20px 40p;
     display: flex;
@@ -286,12 +286,10 @@ body{
   .games .cardbx .card img{
     width: 100%;
     height: 250px;
-    /*object-fit: cover; */
   }
  
   .games .cardbx .card .content{
     padding: 10px;
- 
   }
  
   .games .cardbx .card .content h4{
@@ -380,12 +378,12 @@ body{
   /*contact*/
  
   .contact{
- padding:50px 0px 50px 210px;
- width: 100%;
- min-height: 50vh;
- display: flex;
- justify-content: center;
- align-items: center;
+  padding:50px 0px 50px 210px;
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
  
   .contact img{
@@ -559,5 +557,33 @@ body{
     }
  
  }
+/*
+ *,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*/
+
+.go-top-btn {
+   position: fixed;
+   bottom: 80px;
+   right: 35px;
+   border-radius: 50%;
+   cursor: pointer;
+   height: 75px;
+   width: 75px;
+   background: aqua;
+   border: 3px solid aqua;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0 0 10px aqua;
+   font-size: 20px;
+   font-weight: 10px;
+ }
+ 
+ 
  
  
