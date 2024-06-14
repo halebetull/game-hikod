@@ -294,10 +294,36 @@
 
  </footer>
 
- 
+
  <script>
 
-      src="script.js"
+src="script.js"
+
+let lists = document.querySelectorAll('.list');
+let cards = document.querySelectorAll('.card');
+
+lists.forEach(list => {
+    list.addEventListener('click', function() {
+        lists.forEach(list => {
+            list.classList.remove('active');
+        });
+        this.classList.add('active');
+
+        let dataFilter = this.getAttribute('data-filter');
+
+        cards.forEach(card => {
+            card.classList.remove('active');
+            card.classList.add('hide');
+
+            if (dataFilter === 'all' || card.getAttribute('data-item') === dataFilter) {
+                card.classList.remove('hide');
+                card.classList.add('active');
+            }
+        });
+    });
+});
+
+
 
 
 /*sticky navbar*/
