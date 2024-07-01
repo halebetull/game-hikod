@@ -299,6 +299,8 @@
 
 src="script.js"
 
+/*category*/
+
 let lists = document.querySelectorAll('.list');
 let cards = document.querySelectorAll('.card');
 
@@ -307,6 +309,7 @@ lists.forEach(list => {
         lists.forEach(list => {
             list.classList.remove('active');
         });
+        
         this.classList.add('active');
 
         let dataFilter = this.getAttribute('data-filter');
